@@ -1,0 +1,111 @@
+.foot-bg {
+    background-color: #ffffff;
+    height: auto;
+    overflow: hidden;
+}
+.foot-con {
+    margin-top: 20rem;
+}
+.foot-con-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+.foot-logo img{
+    width: 40%;
+}
+.foot-item h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.foot-item h2 ~ p {
+    margin-bottom: 1rem;
+    color: var(--text-gray);
+}
+.foot-left {
+    text-align: left;
+}
+.foot-btn {
+    display: flex;
+    gap: 2rem;
+}
+.foot-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 12px 20px;
+    background-color: #000;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.foot-item-btn .foot-logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.foot-item-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.foot-item-btn:hover {
+        background-color: rgb(62, 61, 61);
+        cursor: pointer;
+}
+.foot-btn-left {
+    margin-right: 1rem;
+    
+}
+.foot-all {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.foot-all h1 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--bg-green);
+}
+@media only screen and (max-width: 992px) {
+    .foot-con-grid {
+        grid-template-columns: 1fr 1fr;
+        /* border: 1px solid red; */
+        height: auto;
+    }
+    .foot-left {
+        text-align: center;
+    }
+    .foot-btn {
+        justify-content: center;
+    }
+    .foot-btn-left {
+        margin-right: 0;
+    }
+    .foot-logo img{
+        width:  27%;
+    }
+    .foot-top {
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .foot-con-grid {
+        grid-template-columns: 1fr;
+    }
+    .foot-mobile {
+        margin: 2rem auto;
+    }
+    .foot-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .foot-logo img{
+        width:  40%;
+    }
+}
